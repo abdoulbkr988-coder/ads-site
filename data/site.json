@@ -1,0 +1,75 @@
+{
+  "brand": {
+    "name": "ADS",
+    "fullName": "Abdoul Digital Solutions"
+  },
+  "whatsapp": {
+    "number": "2290158947766",
+    "display": "+229 01 58 94 77 66",
+    "messageTemplate": "Bonjour ADS 👋{name}\nJe suis intéressé(e) par le service : *{service}*.\nPouvez-vous m'indiquer les détails, le prix et le délai ?",
+    "otherMessage": "Bonjour ADS 👋{name}\nJ'ai un autre besoin informatique et j'aimerais en discuter avec vous."
+  },
+  "contact": {
+    "city": "Zè plaque, Bénin",
+    "hours": "Lundi au Dimanche, de 8h à 23h",
+    "email": ""
+  },
+  "services": [
+    {
+      "id": "site-web",
+      "icon": "globe",
+      "title": "Création de site web",
+      "description": "Site vitrine, portfolio ou boutique en ligne, adapté au téléphone et prêt à être mis en ligne.",
+      "includes": ["Design sur mesure", "Adapté au mobile", "Mise en ligne"]
+    },
+    {
+      "id": "cv",
+      "icon": "cv",
+      "title": "CV professionnel",
+      "description": "Un CV clair et soigné qui met votre parcours en valeur.",
+      "includes": ["Mise en page moderne", "Fichiers Word et PDF"]
+    },
+    {
+      "id": "lettre",
+      "icon": "mail",
+      "title": "Lettre de motivation",
+      "description": "Une lettre personnalisée pour un emploi, un stage ou une candidature de bourse.",
+      "includes": ["Adaptée à l'offre", "Ton professionnel"]
+    },
+    {
+      "id": "impressions",
+      "icon": "printer",
+      "title": "Impressions",
+      "description": "Impression de vos documents, CV, rapports et affiches.",
+      "includes": ["Couleur ou noir et blanc", "Documents, rapports, affiches"]
+    },
+    {
+      "id": "documents",
+      "icon": "briefcase",
+      "title": "Documents professionnels",
+      "description": "Rapports, mémoires, factures, devis, présentations : saisis et mis en forme proprement.",
+      "includes": ["Saisie et mise en forme", "Word, Excel, PowerPoint"]
+    },
+    {
+      "id": "formation",
+      "icon": "cap",
+      "title": "Formation",
+      "description": "Apprenez l'informatique pas à pas : bureautique, création web et outils numériques.",
+      "includes": ["Selon votre niveau", "Exercices pratiques"]
+    },
+    {
+      "id": "design",
+      "icon": "pen",
+      "title": "Design graphique",
+      "description": "Logo, carte de visite, flyer ou affiche pour donner une image soignée à votre activité.",
+      "includes": ["Logo et cartes de visite", "Flyers et affiches"]
+    },
+    {
+      "id": "assistance",
+      "icon": "monitor",
+      "title": "Assistance informatique",
+      "description": "Un souci avec votre ordinateur, vos logiciels ou vos fichiers ? On vous aide à le résoudre.",
+      "includes": ["Installation de logiciels", "Dépannage de base"]
+    }
+  ]
+}

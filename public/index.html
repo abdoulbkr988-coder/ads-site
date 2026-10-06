@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADS – Abdoul Digital Solutions | Services informatiques au Bénin</title>
+  <meta name="description" content="Création de site web, CV professionnel, lettre de motivation, impressions, documents professionnels et formations au Bénin et à distance. Commandez directement sur WhatsApp.">
+  <meta name="theme-color" content="#101B4B">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#services">Aller aux services</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="#top" aria-label="ADS – Abdoul Digital Solutions, accueil">
+        <img class="logo-img" src="/img/logo-mark.png" width="420" height="138" alt="ADS">
+        <span class="logo-name">Abdoul Digital Solutions</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#realisations" data-needs-projects hidden>Réalisations</a>
+        <a href="#etapes">Comment ça marche</a>
+        <a href="#apropos">À propos</a>
+        <a href="#faq">Questions</a>
+        <a class="btn btn-wa btn-sm" href="#contact">Nous contacter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Vos besoins numériques, une seule solution : ADS.</h1>
+          <h2>Impression, services informatiques, documents numériques et développement web : ADS vous accompagne avec des solutions simples, rapides et adaptées à vos besoins.</h2>
+          <p class="lead">ADS, Abdoul Digital Solutions, vous accompagne au Bénin et un peu partout dans le monde pour tous vos besoins informatiques : documents, création web, impressions et formations. <br>
+          Basé à Zè plaque - Service à distance - Intervention selon disponibilité
+          </p>
+          <p class="hero-note">Choisissez un service à droite : votre message est déjà écrit, il ne reste qu'à l'envoyer.</p>
+        </div>
+
+        <div class="composer" aria-labelledby="composerTitle">
+          <h2 id="composerTitle">De quoi avez-vous besoin ?</h2>
+          <div class="chips" id="chips" role="radiogroup" aria-label="Choisir un service"></div>
+
+          <label class="field" for="firstName">Votre prénom <span class="muted">(facultatif)</span></label>
+          <input id="firstName" type="text" autocomplete="given-name" placeholder="Ex. : Koffi">
+
+          <div class="chat" aria-live="polite">
+            <div class="bubble" id="bubble"></div>
+          </div>
+
+          <a class="btn btn-wa btn-block" id="composerCta" href="#" target="_blank" rel="noopener">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+            Envoyer sur WhatsApp
+          </a>
+        </div>
+      </div>
+      <noscript>
+        <div class="wrap"><p class="noscript">Activez JavaScript pour choisir un service, ou écrivez-nous directement sur WhatsApp : +229 01 58 94 77 66.</p></div>
+      </noscript>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Tous nos services</h2>
+          <p>Cliquez sur un service : WhatsApp s'ouvre avec votre message déjà prêt.</p>
+        </div>
+        <div class="services" id="servicesList"></div>
+      </div>
+    </section>
+
+    <!-- Réalisations -->
+    <section class="section section-dark" id="realisations" hidden>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Nos réalisations</h2>
+          <p>Quelques projets réalisés pour nos clients. Cliquez sur une photo pour l'agrandir.</p>
+        </div>
+        <div class="filters" id="projectFilters" role="group" aria-label="Filtrer les réalisations"></div>
+        <!--
+          MODE D'EMPLOI
+          1. Copiez votre photo dans le dossier  public/img/projets/
+          2. Donnez-lui le nom prévu ci-dessous (projet-1.jpg, projet-2.jpg...)
+             ou changez le nom dans src="..." (png et webp fonctionnent aussi).
+          3. Modifiez la catégorie, le titre, la description (data-desc) et le texte alt.
+          Une photo absente est cachée automatiquement : rien ne s'affiche tant que
+          vous n'avez pas ajouté l'image. Pour un nouveau projet, copiez le modèle en bas de la liste.
+        -->
+        <div class="projects" id="projectsGrid">
+          <!-- ===== PROJET 1 ===== -->
+          <button type="button" class="project" data-desc="Un projet réalisé par ADS.">
+            <img src="/img/projets/projet-1.jpg" alt="Création de site web réalisé par ADS" width="800" height="600">
+            <span class="project-cap">
+              <span class="project-cat">Site web</span>
+              <span class="project-title">Création de site web</span>
+            </span>
+          </button>
+
+          <!-- ===== PROJET 2 ===== -->
+          <button type="button" class="project" data-desc="Un projet réalisé par ADS.">
+            <img src="/img/projets/projet-2.jpg" alt="Impression réalisé par ADS" width="800" height="600">
+            <span class="project-cap">
+              <span class="project-cat">Impression</span>
+              <span class="project-title">Impression</span>
+            </span>
+          </button>
+
+          <!-- ===== PROJET 3 ===== -->
+          <button type="button" class="project" data-desc="Un projet réalisé par ADS.">
+            <img src="/img/projets/projet-3.jpg" alt="CV professionnel réalisé par ADS" width="800" height="600">
+            <span class="project-cap">
+              <span class="project-cat">CV et documents</span>
+              <span class="project-title">CV professionnel</span>
+            </span>
+          </button>
+
+          <!-- ===== PROJET 4 ===== -->
+          <button type="button" class="project" data-desc="Un projet réalisé par ADS.">
+            <img src="/img/projets/projet-4.jpg" alt="Design graphique réalisé par ADS" width="800" height="600">
+            <span class="project-cap">
+              <span class="project-cat">Design graphique</span>
+              <span class="project-title">Design graphique</span>
+            </span>
+          </button>
+
+          <!-- ===== PROJET 5 ===== -->
+          <button type="button" class="project" data-desc="Un projet réalisé par ADS.">
+            <img src="/img/projets/projet-5.jpg" alt="Formation réalisé par ADS" width="800" height="600">
+            <span class="project-cap">
+              <span class="project-cat">Formation</span>
+              <span class="project-title">Formation</span>
+            </span>
+          </button>
+
+          <!-- ===== PROJET 6 ===== -->
+          <button type="button" class="project" data-desc="Un projet réalisé par ADS.">
+            <img src="/img/projets/projet-6.jpg" alt="Document professionnel réalisé par ADS" width="800" height="600">
+            <span class="project-cap">
+              <span class="project-cat">CV et documents</span>
+              <span class="project-title">Document professionnel</span>
+            </span>
+          </button>
+
+          <!--
+          ===== MODÈLE À COPIER POUR AJOUTER UN PROJET (retirez ce commentaire) =====
+          <button type="button" class="project" data-desc="Description courte du projet.">
+            <img src="/img/projets/projet-7.jpg" alt="Description de la photo" width="800" height="600">
+            <span class="project-cap">
+              <span class="project-cat">Catégorie</span>
+              <span class="project-title">Titre du projet</span>
+            </span>
+          </button>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Étapes -->
+    <section class="section section-tint" id="etapes">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Comment ça marche</h2>
+          <p>Trois étapes, sans formulaire compliqué.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Choisissez</h3>
+            <p>Cliquez sur le service qui vous intéresse. Votre message se prépare tout seul.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Discutez sur WhatsApp</h3>
+            <p>Vous nous donnez vos détails, nous vous indiquons le prix et le délai avant de commencer.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Recevez votre travail</h3>
+            <p>Vous récupérez vos fichiers ou vos impressions, prêts à être utilisés.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="section" id="apropos">
+      <div class="wrap about">
+        <div>
+          <h2>À propos d'ADS</h2>
+          <p>Abdoul Digital Solutions est une entreprise de services informatiques basée à Zè plaque, au Bénin, avec des services aussi disponibles à distance. Elle accompagne les élèves, étudiants, chercheurs d'emploi, indépendants et petites entreprises qui ont besoin d'un travail numérique soigné.</p>
+          <p>Notre approche est simple : un échange direct sur WhatsApp, un prix annoncé avant de commencer, et un résultat propre que vous pouvez utiliser tout de suite.</p>
+        </div>
+        <ul class="values">
+          <li><strong>Réponse directe</strong><span>Vous parlez toujours à la personne qui fait le travail.</span></li>
+          <li><strong>Prix annoncé d'avance</strong><span>Vous savez ce que vous payez avant le début.</span></li>
+          <li><strong>Fichiers prêts à l'emploi</strong><span>Word, PDF, site en ligne ou impression : selon votre besoin.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-tint" id="faq">
+      <div class="wrap faq-wrap">
+        <div class="section-head">
+          <h2>Questions fréquentes</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Comment passer commande ?</summary>
+            <p>Cliquez sur un service. WhatsApp s'ouvre avec un message qui contient le nom du service. Il suffit de l'envoyer, puis de nous donner vos détails.</p>
+          </details>
+          <details>
+            <summary>Combien de temps prend un travail ?</summary>
+            <p>Cela dépend du service. Le délai vous est annoncé sur WhatsApp, avec le prix, avant le début du travail.</p>
+          </details>
+          <details>
+            <summary>Comment se passe le paiement ?</summary>
+            <p>Les modalités de paiement vous sont précisées lors de l'échange sur WhatsApp, avant que nous commencions.</p>
+          </details>
+          <details>
+            <summary>Je ne trouve pas mon besoin dans la liste.</summary>
+            <p>Choisissez « Autre demande » et décrivez ce dont vous avez besoin. Nous vous répondrons sur WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Parlons de votre projet</h2>
+          <p>Remplissez ce court message : il s'ouvre dans WhatsApp, prêt à être envoyé.</p>
+          <ul class="contact-list" id="contactList"></ul>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <label class="field" for="cName">Votre nom</label>
+          <input id="cName" name="name" type="text" autocomplete="name" placeholder="Ex. : Koffi Mensah">
+
+          <label class="field" for="cService">Service souhaité</label>
+          <select id="cService" name="service"></select>
+
+          <label class="field" for="cMsg">Votre message <span class="muted">(facultatif)</span></label>
+          <textarea id="cMsg" name="message" rows="4" placeholder="Décrivez ce dont vous avez besoin"></textarea>
+
+          <button class="btn btn-wa btn-block" type="submit">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+            Envoyer sur WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <img class="foot-logo" src="/img/logo-full.png" width="560" height="256" alt="ADS – Abdoul Digital Solutions : imprimer, numériser, développer, accompagner" loading="lazy">
+          <p class="foot-slogan">Vos idées, notre expertise !</p>
+          <p class="foot-text">Services informatiques au Bénin.</p>
+          <a class="btn btn-wa" id="footWa" href="#" target="_blank" rel="noopener">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+            Écrire sur WhatsApp
+          </a>
+        </div>
+
+        <nav class="foot-col" aria-label="Liens du site">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li data-needs-projects hidden><a href="#realisations">Réalisations</a></li>
+            <li><a href="#etapes">Comment ça marche</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#faq">Questions fréquentes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="foot-col">
+          <h3>Nos services</h3>
+          <ul id="footServices"></ul>
+        </div>
+
+        <div class="foot-col">
+          <h3>Contact</h3>
+          <ul class="foot-contact" id="footContact"></ul>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> ADS – Abdoul Digital Solutions. Tous droits réservés.</span>
+        <a href="#top">Retour en haut</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lbTitle">
+    <button class="lb-close" id="lbClose" type="button">Fermer</button>
+    <img id="lbImg" alt="">
+    <div class="lb-body">
+      <p class="lb-cat" id="lbCat"></p>
+      <h3 id="lbTitle"></h3>
+      <p id="lbDesc"></p>
+      <a class="btn btn-wa" id="lbCta" href="#" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+        Demander un projet similaire
+      </a>
+    </div>
+  </dialog>
+
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Écrire à ADS sur WhatsApp">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+
+  <!-- Icônes -->
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 8.5c.2 2.6 2.9 5.3 5.5 5.5l1.2-1.2-1.9-1-.9.7c-.8-.3-1.7-1.2-2-2l.7-.9-1-1.9z"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="i-cv" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><circle cx="12" cy="13" r="2"/><path d="M8.5 19a3.5 3.5 0 0 1 7 0"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/><path d="M2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    </defs>
+  </svg>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
